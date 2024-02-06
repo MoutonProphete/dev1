@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(27, 139, 143)
+}
+
+.container {
+    width: 75%;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+}
+
+nav {
+    background-color: #603b32;
+    font-size: 1.6em;
+    color: aliceblue;
+
+}
+
+nav>a {
+    text-decoration: none;
+    color: aliceblue;
+    display: inline-block;
+    width: 14em;
+    height: 3em;
+    line-height: 3em;
+}
+
+nav>a:hover {
+    background-color:#a79189;
+    transition-duration: 0.6s;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.4em;
+    background-color: #603b32;
+    color: aliceblue;
+    text-align: center;
+    padding: 0.5em 0;
+}
+
+/* padding 0.5em0 fois deux signifie regler le padding d'abord de haut en bas et ensuite de gauche a droite} */
+main.container>section>img:nth-child(1) {
+    border-radius: 10px;
+    max-width: 515px;
+    width: 100%;
+}
+
+main.container>section {
+    background-color: #448088;
+    width: 70%;
+    float: left;
+    padding: 2em;
+    color: aliceblue;
+    line-height: 2em;
+
+}
+
+main.container>aside {
+    background-color: aliceblue;
+    width: 30%;
+    display: inline-block;
+    padding: 1em;
+    text-align: justify;
+    line-height: 2em;
+}
+
+main.container>section>p {
+    margin-bottom: 2.5em
+}
+
+@media only screen and (min-width:560px) and (max-width:960px) {
+    main.container>section{
+        width: 100%;
+    }
+    main.container>aside {
+        width: 100%;
+    }
+    nav>a {
+        width: auto;
+
+    }
+}
+
+@media only screen and (max-width:560px){
+    main.container>section{
+        width: 100%;
+    }
+    main.container>aside {
+        display: none;
+    }
+    nav>a {
+        width: auto;
+    }
+
+}
