@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Vos coordonnées</h1>
+    <form>
+    <p><label>Société :</label><input type="text" required name="societe" minlength="1" id="societe"/></p>
+    <p><label>Personne a contacter :</label><input type="text" required name="personneContact" id="personneContact"/></p>
+    adresse de l'entreprise :<textarea cols="50" rows="10"></textarea>
+    <p><label>Votre code postal :</label><input type="text" pattern="[0-9]{5}"  maxlength="5"  placeholder="ex : 37000"/></p>
+    <p><label>Ville :</label> <input type="text" minlength="1"></p>
+    <p><label>Votre Email*</label><input type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/></p>
+    <p><label>Votre numero de tel.</label><input type="text" pattern="0[1-9][0-9]{8}"  placeholder="ex : 0153322327"/></p>
+    <label>Selectionnez l'environnement technique du projet :</label><textarea cols="40" rows="8"></textarea>
+    <p>Profession:<select name="metier" id="metier">
+        <optgroup label="informatique" class="informatique">
+<option value="">--Choisissez--</option>
+<option value="access">access</option>
+<option value="java">Java</option>
+<option value="delphi">Delphi</option>
+<option value="windev">Windev</option>
+<option value="visualBasic">Visual Basic</option>
+<option value="powerBuilder">Power Builder</option>
+<option value="internet">Internet</option>
+<option value="intranet">Intranet</option>
+<option value="windowsXt">Windows XT</option>
+<option value="unix">Unix</option>
+<option value="sqlServer">SQL Server</option>
+<option value="oracle">Oracle</option>
+<option value="autres">Autres</option><p></optgroup>
+</select>
+<br><br>
+<input type="submit" name="validez" value="validez"><input type="reset" name="annuler" value="annuler">
+    
+    
+    
+    
+    
+    </form>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
