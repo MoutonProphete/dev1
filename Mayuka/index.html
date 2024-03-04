@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="The Fair Food Co_.jpg" />
+      <div>
+        <h1>My Yuka</h1>
+        <h2>Obtenez les informations sur les produits alimentaires.</h2>
+      </div>
+    </header>
+    <div id="saisie">
+      <input
+        type="text"
+        class="form-control"
+        id="champ"
+        aria-describedby="emailHelp"
+      />
+      <button type="submit" id="bouton" class="btn btn-primary">Scanner</button>
+    </div>
+    <section>
+      <div class="container-fluid d-flex justify-content-around" id="produit">
+        <div class="col-lg-6 col-12 m-2 text-center" id="imageProduit">
+          <span>Photo</span>
+        </div>
+        <div class="col-lg-6 col-12 m-2 text-center" id="ingredients">
+          <span>Ingrédients</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="container text-center" id="allergenes">Allergenes</div>
+
+    <div class="container text-center bg-primary">
+      <div class="row row-cols-3">
+        <div class="col" id="labels">NOVAa</div>
+        <div class="col" id="nutriscore">Nutriscore</div>
+        <div class="col" id="palmOil">Huile de palme</div>
+      </div>
+    </div>
+    <div class="container text-center" id="brand">
+      Info/>Distributeurs/Fabricants
+    </div>
+    <div class="container text-center bg-primary">Footer</div>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+  </body>
+</html>
